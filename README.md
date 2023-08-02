@@ -1,10 +1,12 @@
 # lumpedLIBModelBC
 This is a boundary condition for lithium-ion battery using lumped model written based on foam-extend-4.1.
 
-## Math equation
+
+## Mathematical Relationships
 $$ \left(\rho V C_p \right) {dT_b \over dt} = R I^2 + I T_b {dE_{oc} \over dT_b} - h_f A_b \left( T_b - T_f \right)$$
 
 Which $\rho$, $V$, $C_p$, $T_b$, $t$, $R$, $I$, ${dE_{oc} \over dT_b}$, $h_f$,  $A_b$, and $T_f$ are density, volume of battery, specific heat capacity, temperature of battery, time, resistance, current, the entropy coefficient due to the electrochemical reaction, heat transfer coefficient of fluid, area of battery, and temperature of fluid, respectively.
+
 
 ## Installation
 It is working on foam-extend-4.1
@@ -15,6 +17,8 @@ wmake libso
 cd ../case
 ```
 
+
+## Getting Started
 1. First way
 ```bash
 surfaceFeatureEdges fluidDomain.stl fluidDomain.fms
@@ -31,8 +35,10 @@ buoyantBoussinesqPisoFoam
 ./Allrun
 ```
 
+
 ## Activation
 Add "liblumpedLIBModelBC.so" to case/system/controlDict
+
 
 ## References
 * [Golab, Ehsan, Behzad Vahedi, Ankur Jain, Robert A. Taylor, and Kambiz Vafai. "Laminar forced convection in a tube with a nano-encapsulated phase change materials: Minimizing exergy losses and maximizing the heat transfer rate." Journal of Energy Storage 65 (2023): 107233.](https://www.sciencedirect.com/science/article/abs/pii/S2352152X23006308)
