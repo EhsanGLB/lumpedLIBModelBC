@@ -4,8 +4,6 @@ This is a boundary condition for lithium-ion battery using lumped model written 
 ## Math equation
 $$ \left(\rho V C_p \right){dT_b \over dt} = R I^2 + I T_b {dE_{oc} \over dT_b} - h_f A_b \left( T_b - T_f \right)$$
 
-
- = {{q^{"} - h_o(T-T_o)} \over k_f}
 Which $T$, $q^{"}$, $h_o$, $T_o$, and $k_f$ are temperature, heat flux, heat transfer coefficient of an external fluid, temperature of the external fluid, and the thermal conductivity of the fluid, respectively.
 
 ## Installation
