@@ -29,7 +29,6 @@ buoyantBoussinesqPisoFoam
 ```bash
 ./Allrun
 ```
-```
 
 ## Activation
 Add "liblumpedLIBModelBC.so" to case/system/controlDict
