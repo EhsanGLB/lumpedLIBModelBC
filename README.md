@@ -4,7 +4,7 @@ This is a boundary condition for lithium-ion battery using lumped model written 
 ## Math equation
 $$ \left(\rho V C_p \right) {dT_b \over dt} = R I^2 + I T_b {dE_{oc} \over dT_b} - h_f A_b \left( T_b - T_f \right)$$
 
-Which $\rho$, $V$, $h_o$, $T_o$, and $k_f$ are temperature, heat flux, heat transfer coefficient of an external fluid, temperature of the external fluid, and the thermal conductivity of the fluid, respectively.
+Which $\rho$, $V$, $C_p$, $T_b$, $t$, $R$, $I$, ${dE_{oc} \over dT_b}$, $h_f$,  $A_b$, and $T_f$ are temperature, heat flux, heat transfer coefficient of an external fluid, temperature of the external fluid, and the thermal conductivity of the fluid, respectively.
 
 ## Installation
 It is working on foam-extend-4.1
