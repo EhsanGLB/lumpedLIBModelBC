@@ -2,7 +2,7 @@
 This is a boundary condition for lithium-ion battery using lumped model written based on foam-extend-4.1.
 
 ## Math equation
-$$ ({rho*V*C_p})*{dy \over dx} = {{q^{"} - h_o(T-T_o)} \over k_f} $$
+$$ (rho*V*C_p)*{dy \over dx} = {{q^{"} - h_o(T-T_o)} \over k_f} $$
 
 Which $T$, $q^{"}$, $h_o$, $T_o$, and $k_f$ are temperature, heat flux, heat transfer coefficient of an external fluid, temperature of the external fluid, and the thermal conductivity of the fluid, respectively.
 
