@@ -2,7 +2,7 @@
 This is a boundary condition for lithium-ion battery using lumped model written based on foam-extend-4.1.
 
 ## Math equation
-$$ \left({\rho V C_p}\right){dy \over dx} = R I^2 - I T {dE_{oc} \over dT}$$
+$$ \left({\rho V C_p}\right){dT_b \over dt} = R I^2 - I T_b {dE_{oc} \over dT_b}$$
 
 
  = {{q^{"} - h_o(T-T_o)} \over k_f}
