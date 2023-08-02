@@ -1,0 +1,89 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | foam-extend: Open Source CFD                    |
+|  \\    /   O peration     | Version:     4.1                                |
+|   \\  /    A nd           | Web:         http://www.foam-extend.org         |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 1 0 0 0];
+
+internalField   uniform 300;
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 300;
+    }
+
+    outlet
+    {
+        type            zeroGradient;
+    }
+
+    wall
+    {
+        type            zeroGradient;
+    }
+
+    LIB1
+    {
+        type            lumpedLIBModelBC;
+        state           discharge;
+        rho             2964;//(kg/m3)
+        Cp              1108;//(J/Kg.K)
+        I               3.2;//(A)
+        R               0.2;//(Ohm)
+        dEdT            4.0e-4;//(V/K)
+        Ti              300.0;//(K)
+        SOC             10;//(%)
+        C               3.2;//(Ah)
+        V               1.57e-5;//(m3)
+        kf              0.026;//(W/m.K)
+    }
+
+    LIB2
+    {
+        type            lumpedLIBModelBC;
+        state           discharge;
+        rho             2964;//(kg/m3)
+        Cp              1108;//(J/Kg.K)
+        I               3.2;//(A)
+        R               0.2;//(Ohm)
+        dEdT            4.0e-4;//(V/K)
+        Ti              300.0;//(K)
+        SOC             15;//(%)
+        C               3.2;//(Ah)
+        V               1.57e-5;//(m3)
+        kf              0.026;//(W/m.K)
+    }
+
+    LIB3
+    {
+        type            lumpedLIBModelBC;
+        state           discharge;
+        rho             2964;//(kg/m3)
+        Cp              1108;//(J/Kg.K)
+        I               3.2;//(A)
+        R               0.2;//(Ohm)
+        dEdT            4.0e-4;//(V/K)
+        Ti              300.0;//(K)
+        SOC             20;//(%)
+        C               3.2;//(Ah)
+        V               1.57e-5;//(m3)
+        kf              0.026;//(W/m.K)
+    }
+}
+
+
+// ************************************************************************* //
