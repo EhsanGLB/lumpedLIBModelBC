@@ -14,6 +14,7 @@ cd lumpedLIBModelBC/lumpedLIBModelBC
 wmake libso
 cd ../case
 ```
+
 1. First way
 ```bash
 surfaceFeatureEdges fluidDomain.stl fluidDomain.fms
