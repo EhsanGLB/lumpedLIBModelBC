@@ -1,3 +1,0 @@
-lumpedLIBModelBC.C
-
-LIB = $(FOAM_USER_LIBBIN)/liblumpedLIBModelBC
